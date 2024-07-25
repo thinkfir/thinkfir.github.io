@@ -1,0 +1,196 @@
+/* style.css */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  background-color: #333;
+  display: flex; /* Use flexbox for the entire page */
+  flex-direction: column; /* Arrange elements vertically */
+  min-height:80vh; /* Ensure the page is at least as tall as the viewport */
+  
+}
+
+header {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* Add this to position the bar */
+}
+/* Style the bar */
+header::before {
+  content: ''; /* Create a pseudo-element */
+  position: absolute;
+  top: 0; /* Position at the top of the header */
+  left: 0;
+  width: 100%;
+  height: 25px; /* Adjust the bar height */
+  background-color: #333; /* Set bar color */
+}
+
+main {
+  flex: 1;
+}
+
+#main-content {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#main-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*#studentJobPic img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px
+}*/
+
+.nav-container {
+    position: relative; /* Necessary for positioning the image */
+    background-image: url("ptj.png");
+    background-size: cover;
+    background-position: top; 
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    padding-bottom: 180px; /* Adjust this value to control the height of the background */
+  li {
+    margin-bottom: 80px; /* Add space between list items */
+  }
+}
+
+nav {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Make navigation vertical */
+  align-items: center;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Make navigation vertical */
+  align-items: center;
+}
+
+nav li {
+  margin: 40px 0; /* Increased space between buttons */
+  width: 300px; /* Adjust button width */
+  position: relative; 
+}
+
+.nav-button {
+  background-color: #007bff; /* Primary color for buttons */
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make buttons full width */
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Space between image and text */
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+  text-decoration: none; /* Remove default link underline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.nav-button img {
+  width: 100%; /* Make image fill the button width */
+  height: auto; 
+  position: absolute; /* Position the image as absolute */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the image behind the text */
+  opacity: 0.5;
+}
+
+.nav-button span {
+  /* Style the text on the button */
+  z-index: 1; 
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #0069d9; /* Slightly darker shade on hover */
+}
+
+.nav-button:hover img {
+  opacity: 1; /* Make the image fully opaque on hover */
+}
+
+.back-button {
+  background-color: #333; /* Primary color for buttons */
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Make buttons full width */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Space between image and text */
+  position: relative;
+  overflow: hidden; /* Hide overflowing content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 20px;
+  }
+  .back-button:hover {
+    background-color: #0069d9; /* Slightly darker shade on hover */
+  }
+
+.back-button span {
+  /* Style the text on the button */
+  z-index: 1; 
+  text-align: center;
+}
+
+.nav-button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
+
+footer {
+  background-color: #007bff; 
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: bottom;
+  bottom: 0;
+  width: 100%;
+}
+
+footer {
+  margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Style for point form list */
+ul1{
+  list-style: none;
+  padding-left: 20px;
+  padding-right:20px;
+  margin-bottom: 120px;
+}
+
+li1 {
+  margin-bottom: 120px; /* Add space between list items */
+}
+
+ul {
+  list-style-type: disc; /* Use discs as bullet points */
+  padding-left: 20px; /* Add some left padding for spacing */
+}
+li {
+  margin-bottom: 20px; /* Add space between list items */
+}
